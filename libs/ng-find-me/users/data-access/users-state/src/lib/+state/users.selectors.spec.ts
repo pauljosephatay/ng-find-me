@@ -47,13 +47,13 @@ describe('Users Selectors', () => {
       expect(selId).toBe('PRODUCT-BBB');
     });
 
-    it("getUsersLoaded() should return the current 'loaded' status", () => {
+    it('getUsersLoaded() should return the current "loaded" status', () => {
       const result = UsersSelectors.getUsersLoaded(state);
 
       expect(result).toBe(true);
     });
 
-    it("getUsersError() should return the current 'error' state", () => {
+    it('getUsersError() should return the current "error" state', () => {
       const result = UsersSelectors.getUsersError(state);
 
       expect(result).toBe(ERROR_MSG);

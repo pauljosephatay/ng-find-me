@@ -1,29 +1,62 @@
 {
   "implicitDependencies": {
     "angular.json": "*",
-    "package.json": { "dependencies": "*", "devDependencies": "*" },
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
     "tsconfig.base.json": "*",
     "tslint.json": "*",
     ".eslintrc.json": "*",
     "nx.json": "*"
   },
-  "affected": { "defaultBase": "master" },
+  "affected": {
+    "defaultBase": "master"
+  },
   "npmScope": "findme",
   "tasksRunnerOptions": {
     "default": {
       "runner": "@nrwl/workspace/tasks-runners/default",
-      "options": { "cacheableOperations": ["build", "lint", "test", "e2e"] }
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e"]
+      }
     }
   },
   "projects": {
-    "ng-find-me": { "tags": [] },
-    "ng-find-me-e2e": { "tags": [], "implicitDependencies": ["ng-find-me"] },
-    "ng-find-me-users-data-access-users-api": { "tags": [] },
-    "ng-find-me-users-data-access-users-state": { "tags": [] },
-    "ng-find-me-shared-data-access": { "tags": [] },
-    "ng-find-me-shared-environments": { "tags": [] },
-    "ng-find-me-feature-user-address-search": { "tags": [] },
-    "ng-find-me-feature-shell": { "tags": [] },
-    "ng-find-me-utils-testing": { "tags": [] }
+    "ng-find-me": {
+      "tags": []
+    },
+    "ng-find-me-e2e": {
+      "tags": [],
+      "implicitDependencies": ["ng-find-me"]
+    },
+    "ng-find-me-users-data-access-users-api": {
+      "tags": []
+    },
+    "ng-find-me-users-data-access-users-state": {
+      "tags": []
+    },
+    "ng-find-me-shared-data-access": {
+      "tags": []
+    },
+    "ng-find-me-shared-environments": {
+      "tags": []
+    },
+    "ng-find-me-feature-user-address-search": {
+      "tags": []
+    },
+    "ng-find-me-feature-shell": {
+      "tags": []
+    },
+    "ng-find-me-utils-testing": {
+      "tags": []
+    },
+    "rx-find-me": {
+      "tags": []
+    },
+    "rx-find-me-e2e": {
+      "tags": [],
+      "implicitDependencies": ["rx-find-me"]
+    }
   }
 }

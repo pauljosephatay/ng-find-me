@@ -8,5 +8,6 @@ module.exports = {
     '<rootDir>/libs/ng-find-me/feature-user-address-search',
     '<rootDir>/libs/ng-find-me/feature-shell',
     '<rootDir>/libs/ng-find-me/utils-testing',
+    '<rootDir>/apps/rx-find-me',
   ],
 };

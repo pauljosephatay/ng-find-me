@@ -5,5 +5,5 @@
 export const environment = {
   production: false,
   apiRootUrl:
-    'http://findmeapi-env.eba-y8ktwmfy.ap-southeast-2.elasticbeanstalk.com',
+    'https://findmeapi-env.eba-y8ktwmfy.ap-southeast-2.elasticbeanstalk.com',
 };

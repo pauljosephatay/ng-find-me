@@ -1,0 +1,75 @@
+:host {
+  position: relative;
+  display: block;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 100;
+  color: #fa2052;
+  padding: 12px 12px 12px 24px;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+}
+
+.section-search {
+  display: flex;
+  transition-timing-function: ease-out;
+  transition-duration: 0.3s;
+  height: 80px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.section-search findme-search-input {
+  display: block;
+  width: 240px;
+  padding: 14px;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+  z-index: 1;
+}
+
+.section-search.searching {
+  height: 160px;
+}
+
+.section-search.searching findme-search-input {
+  width: 400px;
+  padding: 24px;
+}
+
+.section-search::after {
+  background: #ffffff !important;
+  box-shadow: rgb(0 0 0 / 8%) 0px 1px 12px !important;
+  content: '' !important;
+  height: 100% !important;
+  left: 0px !important;
+  position: absolute !important;
+  top: 0px !important;
+  transition: opacity 0.3s cubic-bezier(0.35, 0, 0.65, 1) !important;
+  width: 100% !important;
+  z-index: 0 !important;
+  transition-timing-function: ease !important;
+  opacity: 1 !important;
+}
+
+.section-map {
+  padding-top: 80px;
+  height: calc(100vh - 80px);
+}
+
+.user-detail {
+  position: absolute;
+  width: 280px;
+  top: 200px;
+  left: 40px;
+  background: #fffefe;
+  padding: 14px;
+}

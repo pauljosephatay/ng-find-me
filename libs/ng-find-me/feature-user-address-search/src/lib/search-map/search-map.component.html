@@ -1,0 +1,5 @@
+<ng-container *ngIf="mapLoader.loaded$ | async">
+  <google-map [options]="options" height="100%" width="100%">
+    <map-marker *ngIf="position" [position]="position"></map-marker>
+  </google-map>
+</ng-container>

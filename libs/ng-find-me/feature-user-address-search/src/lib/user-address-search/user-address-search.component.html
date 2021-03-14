@@ -1,0 +1,17 @@
+<h1>Find Me</h1>
+<div class="section-search" [ngClass]="{ searching: searching }">
+  <findme-search-input
+    (focused)="onFocus($event)"
+    (selected)="onSelected($event)"
+  ></findme-search-input>
+</div>
+<div class="section-map">
+  <findme-search-map [user]="user"></findme-search-map>
+</div>
+
+<div class="user-detail" *ngIf="user">
+  <findme-search-address-detail
+    [address]="user?.address"
+    [username]="user?.name"
+  ></findme-search-address-detail>
+</div>

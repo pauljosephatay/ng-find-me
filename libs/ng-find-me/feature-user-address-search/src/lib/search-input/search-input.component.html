@@ -1,0 +1,29 @@
+<div class="wrapper">
+  <tui-input
+    #searchInput
+    tuiTextfieldExampleText="Type a name"
+    *tuiLet="filtered$ | async as filtered"
+    [formControl]="control"
+    [tuiTextfieldLabelOutside]="true"
+    [tuiTextfieldCleaner]="true"
+    (input)="onSearch(control.value)"
+    (focusedChange)="onFocus($event)"
+  >
+    <ng-container *ngIf="filtered.length">
+      <tui-data-list *tuiDataList>
+        <button
+          *ngFor="let user of filtered"
+          tuiOption
+          [value]="user.name"
+          (click)="onSelected(user); searchInput.nativeFocusableElement.blur()"
+        >
+          {{ user.name }}
+          <tui-avatar size="xs" [text]="user.name"></tui-avatar>
+        </button>
+      </tui-data-list>
+    </ng-container>
+  </tui-input>
+  <div class="icon">
+    <tui-svg src="tuiIconSearchLarge"></tui-svg>
+  </div>
+</div>

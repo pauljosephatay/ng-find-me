@@ -1,0 +1,42 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@findme/ng-find-me/users/data-access/users-api": [
+        "libs/ng-find-me/users/data-access/users-api/src/index.ts"
+      ],
+      "@findme/ng-find-me/users/data-access/users-state": [
+        "libs/ng-find-me/users/data-access/users-state/src/index.ts"
+      ],
+      "@findme/ng-find-me/shared/data-access": [
+        "libs/ng-find-me/shared/data-access/src/index.ts"
+      ],
+      "@findme/ng-find-me/shared/environments": [
+        "libs/ng-find-me/shared/environments/src/index.ts"
+      ],
+      "@findme/ng-find-me/feature-user-address-search": [
+        "libs/ng-find-me/feature-user-address-search/src/index.ts"
+      ],
+      "@findme/ng-find-me/feature-shell": [
+        "libs/ng-find-me/feature-shell/src/index.ts"
+      ],
+      "@findme/ng-find-me/utils-testing": [
+        "libs/ng-find-me/utils-testing/src/index.ts"
+      ]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

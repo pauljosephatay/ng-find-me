@@ -1,0 +1,91 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Find.Me.Api",
+    "version": "1.0"
+  },
+  "paths": {
+    "/users": {
+      "get": {
+        "tags": ["Users"],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UserSummary"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UserSummary"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/UserSummary"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AddressVM": {
+        "type": "object",
+        "properties": {
+          "lat": {
+            "type": "number",
+            "format": "double"
+          },
+          "lng": {
+            "type": "number",
+            "format": "double"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "withPets": {
+            "type": "boolean"
+          },
+          "petPhoto": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UserSummary": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "address": {
+            "$ref": "#/components/schemas/AddressVM"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

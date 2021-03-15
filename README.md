@@ -13,6 +13,10 @@ Google map api is limited. When quota is reached, it will switch to developer mo
 An over-kill implementation for its use case. Only built as an exercise.
 Built using nrwl cli following feature-shell pattern, ngrx for state management and rxjs reactive approach of programming.
 
+The client users api library is generated out from the backend's swagger.json. For medium to large backend apis, generating the boilerplates saves time and effort. 
+
+``apps/ng-find-me``
+
 ### E2E/Feature Tests Result
 
 Feature tests are found in `apps/ng-find-me-e2e`
@@ -21,6 +25,7 @@ Feature tests are found in `apps/ng-find-me-e2e`
 # Rx Find Me (React)
 
 Initial attempt with react
+``apps/rx-find-me``
 
 ### E2E/Feature Tests Result
 

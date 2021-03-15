@@ -382,7 +382,7 @@ const mapStyles = [
   }
 ];
 
-export const mapOptions = {
+export const mapOptions: google.maps.MapOptions = {
   disableDefaultUI: true,
   center: { lat: -43.52942699743086, lng: 172.63082446431713 },
   mapTypeId: 'roadmap' as google.maps.MapTypeId,
@@ -395,5 +395,5 @@ export const mapOptions = {
   zoomControlOptions: {
     position: 9 as google.maps.ControlPosition.BOTTOM_RIGHT,
   },
-  styles: mapStyles
+  styles: mapStyles as any
 };

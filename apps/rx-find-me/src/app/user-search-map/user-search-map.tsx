@@ -2,6 +2,7 @@ import React from 'react';
 import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
 import './user-search-map.module.scss';
 import { UserSummary } from '../models';
+import { mapOptions } from './map-config';
 
 /* eslint-disable-next-line */
 export interface UserSearchMapProps {
@@ -49,7 +50,7 @@ export function UserSearchMap({ user }: UserSearchMapProps) {
   return isLoaded ? (
     <GoogleMap
       mapContainerStyle={containerStyle}
-      center={center}
+      options={mapOptions}
       zoom={13}
       onLoad={onLoad}
       onUnmount={onUnmount}

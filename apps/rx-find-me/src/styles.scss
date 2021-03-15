@@ -3,6 +3,10 @@
 body {
   font-family: 'Manrope', -apple-system, 'BlinkMacSystemFont', system-ui,
     'Roboto', 'Segoe UI', 'Helvetica Neue', sans-serif;
+  text-rendering: optimizeLegibility;
+  font-smoothing: antialiased;
+  color: #1b1f3b;
+  line-height: 1.2;
 }
 
 .react-autosuggest__container {
